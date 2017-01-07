@@ -1,0 +1,36 @@
+
+.homelist{
+  width:100%;
+  white-space: nowrap;
+  font-size:15px;
+  position: fixed;
+  top: 0;
+  z-index:1;
+  /*background-color: #f67300;*/
+}
+
+.cellTopContent{
+  width:100%;
+  position:relative;
+  top: 0px;
+  background-color: #f6f6f6;
+}
+.cellBottomContent{
+  width: 100%;
+  position:relative;
+  top: 0px;
+  bottom:0px;
+  /*background-color: #334422;*/
+}
+.articletitle{
+  margin: 0px;
+  text-align: left;
+  display: inline-flex;
+  padding: 5px;
+  word-break: break-all;
+  white-space: normal;
+}
+.articleimg{
+  margin: 0px;
+}
+

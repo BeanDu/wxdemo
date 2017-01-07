@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="section">
+      <scroll-view class="homelist" scroll-y="true" style="height: 450px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view wx:for="{{xxx}}" class="section" data-sid="{{item.id}}">
+        <template is="scrollviewcell" data="{{ ...item }}" />
+      </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+
+<template name="scrollviewcell">
+  <navigator url="../detail/index?id={{id}}&pic={{pic}}" class="detail">
+    <view class="cellTopContent">
+      <image class="articleimg" src="{{pic}}"></image>
+    </view>
+    <view class="cellBottomContent">
+      <view class="articletitle">{{ title }}</view>
+      <text class="articletime">{{ date }}</text>
+    </view>
+  </navigator>
+</template>

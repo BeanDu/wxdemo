@@ -7,7 +7,14 @@ Page({
     //       duration: 2000
     //     })
     this.setData({
-      pic: options.pic
+      options: options
     })
+  },
+  testTap: function(e) {
+    wx.showToast({
+          title: "点击成功",
+          icon: 'success',
+          duration: 2000
+        })
   }
 })

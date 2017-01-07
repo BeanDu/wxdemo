@@ -11,7 +11,7 @@
 </view>
 
 <template name="scrollviewcell">
-  <navigator url="../detail/index?id={{id}}&pic={{pic}}" class="detail">
+  <navigator url="../detail/index?id={{id}}&pic={{pic}}&title={{title}}" class="detail">
     <view class="cellTopContent">
       <image class="articleimg" src="{{pic}}"></image>
     </view>

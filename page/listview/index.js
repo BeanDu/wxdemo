@@ -52,6 +52,22 @@ Page({
       scrollTop: 0
     })
   },
+  taptosenddata: function(e){
+    this.setData({
+      xxx: "ddddd"
+    })
+  },
+  tap: function(e) {
+    // for (var i = 0; i < order.length; ++i) {
+    //   if (order[i] === this.data.toView) {
+    //     this.setData({
+    //       toView: order[i + 1],
+    //       scrollTop: (i + 1) * 200
+    //     })
+    //     break
+    //   }
+    // }
+  },
   tapMove: function(e) {
     this.setData({
       scrollTop: this.data.scrollTop + 10
